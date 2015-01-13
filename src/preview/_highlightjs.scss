@@ -3,6 +3,7 @@
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
+
 .hljs {
   display: block;
   overflow-x: auto;
@@ -121,63 +122,3 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-chunk {
   color: #aaa;
 }
-
-body {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  margin: 0;
-  background-color: #ddd;
-}
-
-.video-js {
-  margin: 0 auto;
-}
-
-section {
-  width: 100%;
-  padding: 20px 0;
-}
-
-section .content {
-  width: 720px;
-  margin: 0 auto;
-}
-
-section.header {
-  background-color: #555;
-  color: #ddd;
-}
-
-section.header a {
-  color: #fff;
-}
-
-section.preview {
-  background-color: #fff;
-}
-
-section.usage {
-  background-color: #ddd;
-  text-align: left;
-}
-
-section.usage h2 {
-  text-align: center;
-}
-
-section h1 {
-  margin-top: 0px;
-}
-
-.schemes {
-  margin-top: 10px;
-}
-
-.schemes button {
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 110%;
-  padding: 10px 20px;
-}
-
-/*# sourceMappingURL=preview.css.map */
