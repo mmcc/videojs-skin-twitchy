@@ -1,0 +1,14 @@
+@import "utilities";
+@import "colors";
+
+.vjs-skin-twitchy {
+  @import "components/base";
+  @import "components/big-play";
+  @import "components/control-bar";
+  @import "components/play";
+  @import "components/time";
+  @import "components/slider";
+  @import "components/progress";
+  @import "components/volume";
+  @import "components/fullscreen";
+}

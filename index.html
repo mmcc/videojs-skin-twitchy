@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Video.js Skin Colors: Preview</title>
+
+  <link href="dist/preview/preview.css" rel="stylesheet" type="text/css">
+  <link href="dist/videojs-skin-twitchy.css" rel="stylesheet" type="text/css">
+  <link href="node_modules/highlight.js/styles/github.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <section class="header">
+    <div class="content">
+      <h1>twitchy</h1>
+      <p>Videojs skin that happens to resemble a certain video game streaming site.</p>
+    </div>
+  </section>
+
+  <section class="preview">
+    <div class="content">
+      <video id="preview-player" class="video-js vjs-skin-twitchy" controls preload="auto" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup='{}'>
+        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+        <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+        <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
+        <track kind="captions" src="../build/demo-files/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+      </video>
+    </div>
+  </section>
+
+  <section class="usage">
+    <div class="content">
+      <h2>Getting Started</h2>
+
+      <h3>CDN hosted by RawGit</h3>
+      <p>
+        Include the appropriate CSS file. Thanks to <a href="https://rawgit.com" target="_blank">RawGit</a>, you can simply include the CSS
+        file directly from the Git repo based on the current version tag.
+      </p>
+
+      <pre><code class="xml">&lt;link href="//cdn.rawgit.com/mmcc/videojs-skin-colors/v0.0.1/dist/videojs-skin-colors.css" rel="stylesheet" type="text/css"&gt;</code></pre>
+
+      <h3>Your own build pipeline</h3>
+
+      <p>
+        If you're already using <a href="http://sass-lang.com" target="_blank">Sass</a>, you can simply import the skin's SCSS. First,
+        install the skin via <a href="http://npmjs.com" target="_blank">NPM</a>.
+      </p>
+      <pre><code class="bash">$ npm install --save-dev videojs-skin-colors</code></pre>
+
+      <p>You can set any variables you'd like before importing (namely the <code>$custom-colors</code> map).
+      </p>
+      <pre><code class="sass">$primary-text: #fff !default;
+$progress-bar: #0000ff;
+$progress-bar-bg: #1B1D1F;
+$progress-bar-loading: #333333;
+@import "/path/to/node_modules/vjs-skin-twitchy/src/videojs-skin-twitchy";</code></pre>
+
+      <p>Voila! You now have a shiny, new <code>vjs-skin-twitchy</code> class you can use!</p>
+
+      <h3>Once you've got your CSS...</h3>
+      <p>Simply create a video element as you normally would when using Video.js, but add the <code>vjs-skin-twitchy</code> class.</p>
+
+      <pre><code class="xml">&lt;video id="vid" class="video-js vjs-skin-twitchy" controls width="640" height="264" data-setup='{}'&gt;
+  &lt;source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'&gt;
+  &lt;source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'&gt;
+  &lt;source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'&gt;
+  &lt;track kind="captions" src="../build/demo-files/demo.captions.vtt" srclang="en" label="English"&gt;&lt;/track&gt;
+  &lt;p class="vjs-no-js"&gt;
+    To view this video please enable JavaScript, and consider upgrading to a web browser
+    that &lt;a href="http://videojs.com/html5-video-support/" target="_blank"&gt;supports HTML5 video&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/video&gt;</code></pre>
+    </div>
+  </section>
+
+  <script src="dist/preview/preview.js"></script>
+</body>
+</html>

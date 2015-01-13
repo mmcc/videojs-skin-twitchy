@@ -1,0 +1,10 @@
+.vjs-fullscreen-control {
+  text-align: right;
+  padding-right: 5px;
+  @include flex(auto);
+  @include order(10);
+
+  &:before {
+    position: relative;
+  }
+}

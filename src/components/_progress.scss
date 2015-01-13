@@ -1,0 +1,37 @@
+.vjs-control.vjs-progress-control {
+  height: 0.2em;
+  width: 100%;
+}
+
+&:hover .vjs-control.vjs-progress-control {
+  height: 3em;
+  top: -3em;
+}
+
+.vjs-progress-control {
+  display: border-box;
+  position: absolute;
+  top: -0.2em; // the height of the control
+  left: 0;
+  right: 0;
+}
+
+.vjs-load-progress div {
+  background: $progress-bar-loading;
+}
+
+.vjs-load-progress {
+  background: $progress-bar-loading;
+}
+
+.vjs-play-progress {
+  background-color: $progress-bar;
+}
+
+.vjs-slider-handle.vjs-seek-handle {
+  display: none;
+}
+
+.vjs-progress-holder {
+  height: 100%;
+}

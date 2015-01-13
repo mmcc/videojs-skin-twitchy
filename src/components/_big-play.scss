@@ -1,0 +1,13 @@
+.vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border: none;
+
+  @include background-color-with-alpha($progress-bar-bg, 0.9);
+}
+
+&:hover .vjs-big-play-button,
+.vjs-big-play-button:focus {
+  @include background-color-with-alpha(lighten($progress-bar-bg, 10%), 0.9);
+}

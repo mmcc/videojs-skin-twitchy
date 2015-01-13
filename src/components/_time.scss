@@ -1,0 +1,7 @@
+.vjs-time-controls {
+  @include order(9);
+}
+
+.vjs-current-time, .vjs-no-flex .vjs-current-time { display: block; }
+.vjs-duration, .vjs-no-flex .vjs-duration { display: block; }
+.vjs-time-divider { display: block; }
