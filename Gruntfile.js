@@ -25,6 +25,14 @@ module.exports = function(grunt) {
         }]
       }
     },
+    connect: {
+      dev: {
+        options: {
+          port: 9999,
+          livereload: true
+        }
+      }
+    },
     browserify: {
       dist: {
         files: {
@@ -37,9 +45,11 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-browserify');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'browserify']);
+  grunt.registerTask('connect-watch', ['connect', 'watch']);
 
 };
