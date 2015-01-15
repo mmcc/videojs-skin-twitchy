@@ -6,6 +6,9 @@
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
   border: none;
   background-color: #1B1D1F;
   background-color: rgba(27, 29, 31, 0.9);
