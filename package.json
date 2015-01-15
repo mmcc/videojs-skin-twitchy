@@ -1,6 +1,6 @@
 {
   "name": "videojs-skin-twitchy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Videojs skin that happens to resemble a certain video game streaming site",
   "main": "index.js",
   "scripts": {
