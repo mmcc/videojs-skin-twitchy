@@ -185,7 +185,7 @@ section .content {
 }
 
 section.preview {
-  background-color: #fff;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -213,17 +213,6 @@ section.usage h2 {
   text-align: center;
 }
 
-.schemes {
-  margin-top: 10px;
-}
-
-.schemes button {
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 110%;
-  padding: 10px 20px;
-}
-
 pre {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -237,11 +226,21 @@ pre {
 }
 .btn:hover {
   text-decoration: none;
-  background-color: #c5acee;
+  background-color: #c8b0ef;
+}
+
+.btn.btn-download {
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .usage-method {
   margin: 50px 0;
+}
+
+.usage-method h3 {
+  border-bottom: 1px solid #bebebe;
 }
 
 /*# sourceMappingURL=preview.css.map */

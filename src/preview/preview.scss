@@ -4,6 +4,9 @@
 
 $light-gray: #f1f1f1;
 
+$preview--bg: #ffffff;
+$usage--bg: $light-gray;
+
 $btn--bg: $purple;
 $btn--color: #fff;
 
@@ -83,22 +86,13 @@ section .content {
 }
 
 section.preview {
-  background-color: #fff;
+  background-color: $preview--bg;
   @include display-flex-and-center;
   padding: 0;
   .content { flex: none; }
 }
-section.usage { background-color: $light-gray; text-align: left; }
+section.usage { background-color: $usage--bg; text-align: left; }
 section.usage h2 { text-align: center; }
-
-.schemes { margin-top: 10px; }
-
-.schemes button {
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 110%;
-  padding: 10px 20px;
-}
 
 pre {
   border: 1px solid #ddd;
@@ -117,6 +111,10 @@ pre {
   }
 }
 
-.usage-method {
-  margin: 50px 0;
-}
+.btn.btn-download {
+  display: block;
+  text-align: center;
+  width: 100%; }
+
+.usage-method { margin: 50px 0; }
+.usage-method h3 { border-bottom: 1px solid darken($usage--bg, 20%); }
