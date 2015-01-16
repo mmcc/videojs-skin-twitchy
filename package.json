@@ -11,7 +11,8 @@
     "url": "https://github.com/mmcc/videojs-skin-twitchy.git"
   },
   "keywords": [
-    "Videojs"
+    "videojs",
+    "videojs-skin"
   ],
   "author": "Matthew McClure <m@mmcc.io>",
   "license": "MIT",
