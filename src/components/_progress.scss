@@ -1,17 +1,21 @@
 .vjs-control.vjs-progress-control {
-  height: 0.2em;
+  height: 0.3em;
   width: 100%;
 }
 
 &:hover .vjs-control.vjs-progress-control {
   height: 3em;
   top: -3em;
+
+  .vjs-play-progress, .vjs-load-progress {
+    height: 3em;
+  }
 }
 
 .vjs-progress-control {
   display: border-box;
   position: absolute;
-  top: -0.2em; // the height of the control
+  top: -0.3em; // the height of the control
   left: 0;
   right: 0;
 }
@@ -28,10 +32,15 @@
   background-color: $progress-bar;
 }
 
-.vjs-slider-handle.vjs-seek-handle {
+.vjs-progress-control:hover .vjs-progress-holder {
+  font-size: 1em;
+}
+
+.vjs-play-progress:before {
   display: none;
 }
 
 .vjs-progress-holder {
   height: 100%;
+  @include transition(height 0.5s);
 }

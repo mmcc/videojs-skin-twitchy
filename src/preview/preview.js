@@ -18,6 +18,7 @@ videojs.options.controlBar = {
     'currentTimeDisplay': {},
     'timeDivider': {},
     'durationDisplay': {},
+    'customControlSpacer': {},
     'fullscreenToggle': {}
   }
 };

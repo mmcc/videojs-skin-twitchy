@@ -28,6 +28,6 @@
     "grunt-contrib-watch": "^0.6.1",
     "highlight.js": "^8.4.0",
     "jquery": "^2.1.3",
-    "video.js": "^4.11.3"
+    "video.js": "^5.8"
   }
 }
