@@ -44,3 +44,9 @@
   height: 100%;
   @include transition(height 0.5s);
 }
+
+.vjs-progress-control:hover {
+   .vjs-mouse-display, .vjs-mouse-display:after, .vjs-play-progress:after {
+    display: none;
+  }
+}
