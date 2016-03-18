@@ -58,17 +58,17 @@
 }
 .vjs-skin-twitchy .vjs-control.vjs-progress-control {
   height: 0.2em;
-  width: 100%;
+  width: 65em;
 }
 .vjs-skin-twitchy:hover .vjs-control.vjs-progress-control {
-  height: 3em;
-  top: -3em;
+  height: 2em;
+  top: -2em;
 }
 .vjs-skin-twitchy .vjs-progress-control {
   display: border-box;
   position: absolute;
   top: -0.2em;
-  left: 0;
+  left: -0.5em;
   right: 0;
 }
 .vjs-skin-twitchy .vjs-load-progress div {
