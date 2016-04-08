@@ -32,8 +32,17 @@
   background-color: $progress-bar;
 }
 
-.vjs-progress-control:hover .vjs-progress-holder {
-  font-size: 1em;
+.vjs-progress-control:hover {
+  .vjs-progress-holder {
+    font-size: 1em;
+  }
+
+  .vjs-time-tooltip {
+    font-size: 1em;
+    height: 2.4em;
+    padding-top: 0.8em;
+    top: -3em;
+  }
 }
 
 .vjs-play-progress:before {
@@ -43,10 +52,4 @@
 .vjs-progress-holder {
   height: 100%;
   @include transition(height 0.5s);
-}
-
-.vjs-progress-control:hover {
-   .vjs-mouse-display, .vjs-mouse-display:after, .vjs-play-progress:after {
-    display: none;
-  }
 }
