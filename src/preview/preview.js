@@ -24,7 +24,13 @@ videojs.options.controlBar = {
 };
 
 var currentScheme = 'vjs-theme-colors-green';
-var player = videojs('preview-player');
+var player = videojs('preview-player', {
+  controlBar: {
+    progressControl: {
+      keepTooltipsInside: true
+    }
+  }
+});
 
 var schemes = $('.schemes button');
 schemes.click(function(e) {
