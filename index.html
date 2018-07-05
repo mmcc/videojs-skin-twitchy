@@ -5,6 +5,7 @@
   <title>Video.js Skin Colors: Preview</title>
 
   <link href="dist/preview/preview.css" rel="stylesheet" type="text/css">
+  <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet">
   <link href="dist/videojs-skin-twitchy.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -19,11 +20,10 @@
       <p class="tagline">Videojs skin that happens to resemble a certain awesome video game <a href="http://twitch.tv">streaming site</a>.</p>
 
       <video id="preview-player" class="video-js vjs-skin-twitchy" controls preload="auto" width="640" height="264"
-      poster="http://video-js.zencoder.com/oceans-clip.png"
+      poster="http://vjs.zencdn.net/v/oceans.png"
       data-setup='{}'>
-        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
-        <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
-        <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+        <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
         <track kind="captions" src="../build/demo-files/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
       </video>
@@ -80,9 +80,8 @@ $progress-bar-loading: #333333;
         <p>Simply create a video element as you normally would when using Video.js, but add the <code>vjs-skin-twitchy</code> class.</p>
 
         <pre><code class="xml">&lt;video id="vid" class="video-js vjs-skin-twitchy" controls width="640" height="264" data-setup='{}'&gt;
-  &lt;source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'&gt;
-  &lt;source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'&gt;
-  &lt;source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'&gt;
+  &lt;source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'&gt;
+  &lt;source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'&gt;
   &lt;track kind="captions" src="../build/demo-files/demo.captions.vtt" srclang="en" label="English"&gt;&lt;/track&gt;
   &lt;p class="vjs-no-js"&gt;
     To view this video please enable JavaScript, and consider upgrading to a web browser
